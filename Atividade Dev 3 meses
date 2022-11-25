@@ -1,0 +1,209 @@
+1) Escreva um número e indique se o mesmo é maior que 100.
+algoritmo "Fale"
+var
+   A, B, S: inteiro
+inicio
+   A <- 100
+   B <- (S)
+   Escreval ("Me fale um número: ")
+   Leia (S)
+   Escreva ("O Número ", S, " É Maior que 100! = ", S>A)
+Fimalgoritmo
+......................................................................................................................
+2- Crie um algoritmo que leia uma senha fornecida pelo usuário composta por caracteres para informar se a senha é válida ou inválida. A senha do sistema corresponde a palavra “PORTUGOL”. Obs.: O algoritmo não faz distinção de letras maiúsculas e minúsculas.
+algoritmo "Senha"
+var
+   senha: caractere
+inicio
+   Escreval ("Forneça a senha do usuário: ")
+  Leia (senha)
+ se (senha = "portugol") entao
+   escreva ("A senha está correta.")
+ senao
+   escreva ("Senha incorreta, não foi possível cadastra-lo.")
+fimse
+fimalgoritmo
+.....................................................................................................................
+3- Crie um algoritmo que leia um número e alerte quando o mesmo estiver entre 100 e 500.
+algoritmo "De100A500"
+var
+   N1: inteiro
+inicio
+ Escreva ("Fale um número: ")
+ leia (N1)
+   se (N1<100) ou (N1>500) entao
+     escreva ("O número ", N1 ," Não está entre 100 e 500")
+   senao
+     escreva ("O número ", N1 ," Se encontra entre 100 e 500")
+fimse
+fimalgoritmo
+............................................................................................................
+4- Crie um algoritmo que leia duas notas para calcular a média do aluno e determinar se o mesmo foi aprovado ou reprovado. A média para aprovação é 7.
+algoritmo "TotalDeNotaDoAluno"
+var
+   N1,N2, S: inteiro
+inicio
+   Escreval ("Qual a nota da prova de matemática? ")
+    Leia (N1)
+   Escreval ("Qual a nota da prova de português? ")
+    Leia (N2)
+    S <- N1+N2
+   escreval ("A nota total do aluno foi ", S)
+   Se ((N1+N2) >= 7) entao
+    Escreva ("Portanto, o aluno foi aprovado!")
+   senao
+    Escreva ("Portanto, o aluno foi reprovado!")
+fimse
+fimalgoritmo
+........................................................................................................................
+5- Crie um algoritmo que leia um número inteiro e informe se ele é ou não divisível por 5.
+algoritmo "DivisívelPor5"
+var
+  N1, S: inteiro
+inicio
+  Escreval ("Me fale um número divisível por 5: ")
+  Leia (N1)
+ S <- N1 % 5
+  se ( S = 0 ) entao
+   Escreva ("Este número é divisível por 5")
+  senao
+   Escreva ("Este número não é divisível por 5")
+fimse
+fimalgoritmo
+.................................................................................................................................
+6- Crie um algoritmo que leia um número inteiro e informe se ele é par ou ímpar.
+algoritmo "ImparOuPar"
+var
+   N1: inteiro
+inicio
+      Escreval ("Me fale um número: ")
+      Leia (N1)
+    se ( N1 % 2 = 0) entao
+      escreval (" Este número é par.")
+    senao
+      escreval ("Este número é impar.")
+fimse
+fimalgoritmo
+................................................................................................................................
+7- Crie um algoritmo que leia dois valores diferentes e determine o maior.
+algoritmo "ValorMaior"
+var
+    N1, N2: inteiro
+inicio
+      Escreval ("Me fale um número: ")
+         leia (N1)
+      Escreval ("Me fale outro Número: ")
+         leia (N2)
+         se N1 > N2 entao
+            escreva ("O número ", N1, " é maior do que ", N2)
+         senao
+            escreva ("O número ", N2, " é maior!")
+fimse
+fimalgoritmo
+.................................................................................................................................
+8- Crie um algoritmo que após receber o Salário Bruto, calcule o salário líquido descontando 10% quando o salário bruto for menor que R$ 2000, caso contrário descontar 20%. No final, exiba o salário líquido.
+algoritmo "Salario"
+var
+    sala_bruto, sala_liquido, descon1, descon2: real
+inicio
+      Escreval ("Me fale o seu salário bruto: ")
+      Leia (sala_bruto)
+      descon1 <- (sala_bruto * 10) / 100
+      descon2 <- (sala_bruto * 20) / 100
+        se (sala_bruto < 2000) entao
+           sala_liquido <- sala_bruto - descon1
+        senao
+           sala_liquido <- sala_bruto - descon2
+fimse
+      escreval ("O seu salario liquido sera: ",sala_liquido)
+fimalgoritmo
+.................................................................................................................................
+9- Um comerciante comprou um produto e quer vendê-lo com um lucro de 50% se o valor da compra for menor que R$ 200, caso contrário o lucro será de 30%. Crie um algoritmo que leia o valor da compra e exiba o valor da venda.
+algoritmo "LucroDaVenda"
+var
+  V1, V2, lucro1, lucro2: real
+inicio
+      Escreval ("Qual o valor pago pelo produto? ")
+      Leia (V1)
+      lucro1 <- ( V1 * 50 ) / 100
+      lucro2 <- ( V1 * 30 ) / 100
+             se V1 < 200 entao
+                V2 <- V1 + lucro1
+             senao
+                V2 <- V1 + lucro2
+fimse
+      escreval ("O valor da venda sera de: ", V2)
+fimalgoritmo
+.................................................................................................................................
+10- Crie um algoritmo que leia a média das duas unidades para calcular a sua média final. Em seguida exiba a média final e o resultado que pode ser aprovado, prova final ou reprovado. A média de aprovação é 7, menor que 3 para reprovação e as demais prova final.
+algoritmo "soma"
+var
+          N1, N2, S: Real
+inicio
+      Escreva ("Me fale sua nota da primeira prova: ")
+      Leia (N1)
+      Escreva ("Agora da segunda prova: ")
+      Leia (N2)
+       S <- (N1 + N2)
+        Se S > 0 entao
+             se S < 3 entao
+                 escreval (" REPROVADO!")
+                     senao
+                        se S < 7 entao
+                          escreval ("PROVA FINAL!")
+                              senao
+                                escreval ("APROVADO!")
+fimse
+      fimse
+            fimse
+      Escreva("A soma das suas provas foi na média de ", S, " pontos.")
+fimalgoritmo
+.................................................................................................................................
+11- Crie um algoritmo que leia três lados de um triângulo e determine se ele é equilátero, isósceles ou escaleno. Quando os três lados forem iguais trata-se de um triângulo equilátero, dois lados iguais é um triângulo isósceles e os três lados diferentes é um triângulo escaleno.
+algoritmo "LadosDeTriangulo"
+var
+      ES, EQ, IS: Logico
+      L1, L2, L3: Real
+inicio
+      Escreva ("Primeiro lado: ")
+      Leia (L1)
+      Escreva ("Segundo lado: ")
+      Leia (L2)
+      Escreva ("Terceiro lado: ")
+      Leia (L3)
+         EQ <- (L1 = L2) e ( L2 = L3)
+         IS <- (L1 = L2) e ( L2 <> L3)
+         ES <- (L1 <> L2) e (L2 <> L3) e (L1 <> L3)
+      Escreval ("O triangulo é Equilátero? ", EQ)
+      Escreval ("O triangulo é Isósceles? ", IS)
+      Escreva  ("O triangulo é Escaleno? ", ES)
+Fimalgoritmo
+.................................................................................................................................
+
+14- Crie um algoritmo que leia três números e exibe o maior deles. Caso os números sejam iguais exibir a seguinte mensagem: “Número idênticos”.
+algoritmo "OMaiorNu_é"
+var
+   N1, N2, N3: inteiro
+inicio
+      Escreva ("Me fala um número: ")
+      Leia (N1)
+      Escreva ("Me fala outro número: ")
+      Leia (N2)
+      Escreva ("Me Fale mais um Número: ")
+      Leia (N3)
+       se N1 > N2 e N3 entao
+          escreva (" O número ", N1, " é maior.")
+              senao
+                 se N2 > N1 e N3 entao
+                    escreva (" O número ", N2, " é maior.")
+                       senao
+                          se N3 > N1 e N2 entao
+                             escreva (" O número ", N3, " é o maior!")
+                                senao
+                                   se N1 = N2 e N3 entao
+                                       escreva ("OS NÚMEROS SÃO INDENTICOS!")
+                                fimse
+                         fimse
+                  fimse
+          fimse
+fimalgoritmo
